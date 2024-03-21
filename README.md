@@ -1,17 +1,8 @@
 
 # Viridis Chain Node
 
-This project aims to provide installation, running, and maintenance capabilities of **Viridis Chain validator node** for potential and existing Viridis Chain backers. The consensus structure of this chain is delegated proof of stake "DPos" and is governed by the symbiosis of latest's implementation of go-ethereum and our system contracts [https://github.com/Latest-PoB/system-contracts]. This repository has multiple release candidates inline so we recommend checking for updates for better functions and stability.
+This project aims to provide installation, running, and maintenance capabilities of **Viridis Chain validator node** for potential and existing Viridis Chain backers. The consensus structure of this chain is delegated proof of stake "DPos" and is governed by the symbiosis of latest's implementation of go-ethereum and our system contracts. This repository has multiple release candidates inline so we recommend checking for updates for better functions and stability.
 
-
-## Acknowledgements
-Viridis Chain node inherits its core components from heco-chain project by stars-lab which itself is based on geth by the Ethereum foundation.
-
- - [Go ethereum](https://github.com/ethereum/go-ethereum)
- - [heco-chain](https://github.com/stars-labs/heco-chain)
-
-The revolution started by Bitcoin and later fueled by Ethereum Foundation has launched a wide array of technological advancements and applications.
-We acknowledge and actively contribute to decentralization causes and derivatives.
 ## System Requirements
 
 **Operating System:** Ubuntu >= 20.04 LTS
@@ -27,7 +18,7 @@ We acknowledge and actively contribute to decentralization causes and derivative
 ## How to become a validator
 To back the Latest blockchain you can become a validator. Full flow to become a validator, you must:
 * Install this package **([See Installation](#installation))**
-* Download your newly created validator wallet from your server and import it into your metamask or preferred wallet. Fund this account with the appropriate Latest coin needed to become a validator. Example command to download the wallet on your local PC. Only works for UNIX-based OSes or on any environment that can run the OpenSSH package:
+* Download your newly created validator wallet from your server and import it into your metamask or preferred wallet. Fund this account with the appropriate VRD coin needed to become a validator. Example command to download the wallet on your local PC. Only works for UNIX-based OSes or on any environment that can run the OpenSSH package:
 ```bash
   scp -r root@<server_ip>:/root/core-blockchain/chaindata/node1/keystore
   scp root@<server_ip>:/root/core-blockchain/chaindata/node1/pass.txt
@@ -59,7 +50,7 @@ Skip the above commands if you have already updated the system and installed the
 Connect again to your server after reboot
 ```bash
   sudo -i
-  git clone https://github.com/Latest-PoB/core-blockchain.git
+  git clone https://github.com/hide001/ViridisNetwork/core-blockchain.git
   cd core-blockchain
   ./node-setup.sh --validator 1
 ```
